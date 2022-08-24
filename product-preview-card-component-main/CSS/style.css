@@ -1,0 +1,131 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  padding: 2%;
+}
+.card{
+  height: 700px;
+  width: 600px;;
+  display: flex;
+  flex-direction: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+.left{
+  width: 50%;
+  height: 70%;
+  background-image: url(../images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.right{
+  width: 50%;
+  height:70%;
+  background-color: white;
+  padding: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+h2{
+  color:hsl(228, 12%, 48%, 0.7);
+  font-family:  'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+h1{
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces', serif;
+  line-height: 2rem;
+  margin-bottom: 20px;
+}
+.Description{
+  color: hsl(228, 12%, 48%, 0.7);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding-right: 10px;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+.Prise{
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.Prise span{
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-left: 20px;
+  color: hsl(228, 12%, 48%, 0.6);
+  font-weight: 500;
+}
+img{
+  margin-right: 8px;
+}
+.btn span{
+  display: inline-block;
+
+}
+.btn{
+  width: 100%;
+  padding:10px;
+  background-color: hsl(158, 36%, 37%);
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+
+}
+
+@media only screen and (max-width: 768px){
+  body{
+    padding: 2%;
+  }
+  .card{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .left{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/image-product-mobile.jpg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .right{
+    width: 100%;
+
+    height:100%;
+    background-color: white;
+    padding: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+  }
+}
+
+/* //font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
